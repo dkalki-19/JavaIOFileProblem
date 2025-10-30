@@ -11,7 +11,6 @@ public class EmployeePayrollService {
 	List<EmployeePayrollData> employeePayRollList = new ArrayList<EmployeePayrollData>();
 	
 	EmployeePayrollService(){
-		
 	}
 	
 	EmployeePayrollService(List<EmployeePayrollData> employeePayrollList){
@@ -25,7 +24,7 @@ public class EmployeePayrollService {
 		EmployeePayrollService empService = new EmployeePayrollService(employeePayrollList);
 		 Scanner sc = new Scanner(System.in);
 		 empService.readDetails(sc);
-		 empService.displayDetails();
+		 empService.displayDetails(); 
 		 
 		
 	}
