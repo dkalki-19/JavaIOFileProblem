@@ -16,7 +16,6 @@ public class NIOFileAPITest {
 	private static String PLAY_WITH_NIO = "TempPlayGround";
 	
 	@Test
-	
 	public void givenPathWhenCheckedThenConfirm() throws IOException{
 		// Check File Exists
 		Path homePath = Paths.get(HOME);
