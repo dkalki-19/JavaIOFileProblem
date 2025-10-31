@@ -21,4 +21,24 @@ public class EmployeePayrollFileIOService {
             e.printStackTrace();
         }
     }
+    
+    
+    public void printData() {
+        try {
+            Files.lines(Paths.get(PAYROLL_FILE_NAME))
+                 .forEach(System.out::println);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public long countEntries() {
+        try {
+            return Files.lines(Paths.get(PAYROLL_FILE_NAME)).count();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return 0;
+    }
+
 }
