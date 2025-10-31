@@ -40,5 +40,15 @@ public class EmployeePayrollFileIOService {
         }
         return 0;
     }
+    
+    public List<String> readData() {
+        try {
+            return Files.readAllLines(Paths.get(PAYROLL_FILE_NAME));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
 
 }
